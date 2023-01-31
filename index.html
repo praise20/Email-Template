@@ -4,20 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300;400;700&family=Poppins:wght@200;500;600&display=swap" rel="stylesheet">  
+    
     <title>Document</title>
     <style>
+        .sansFont{
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 200;
+        }
+        .popFont{
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+        }
+        .logo{
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+        }
         /* *{
             border: 1px solid #000;
         } */
+        body{
+            align-items: center;
+        }
         table{
             /* cellspacing:"0"; */
-            border: 1px solid #000;
             width: 100%;
-            max-width: 1000px;
+            /* max-width: 1000px; */
             text-align: center;
-            padding: 20px 300px;
+            padding: 10px 230px;
+            margin-left:auto;
+            margin-right:auto;
         }
-        
+        .topMargin{
+            margin-top: 20px;
+        }
+        .bottomMargin{
+            margin-bottom: 40px;
+        }
         tr{
             margin: 0 !important;
             padding: 0;
@@ -27,12 +50,18 @@
             height: 300px;
         }
         .smallImage{
-            width: 210px;
-            height: 230px;
+            width: 150px;
+            /* max-width: 100%; */
+            min-width: 100%;
+            display: block;
+            height: 210px;
         }
         .mediumImg{
-            width: 300px;
-            height: 330px;
+            width: 280px;
+            min-width: 100%;
+            height: 350px;
+            /* height:auto; */
+            display:block;
         }
         button{
             width: 100px;
@@ -54,7 +83,7 @@
             width: 20px;
             height: 20px;
             border-radius: 50%;
-            border: 1px solid black;
+            /* border: 1px solid black; */
             margin: 0 5px;
         }
         .shape{
@@ -72,8 +101,8 @@
             background-color: rgb(253, 200, 116);
         }
         .borderCor{
-            border-top: 1px solid aqua;
-            border-bottom: 1px solid aqua;
+            border-top: 1px solid rgb(2, 91, 150);
+            border-bottom: 1px solid rgb(2, 91, 150);
         }
         .bg{
             background-color: rgb(11,11, 72);
@@ -96,8 +125,49 @@
         .cyanBg{
             background-color: rgb(141, 215, 231);
         }
-        .margin{
-            margin: 15px 0;
+        .column{
+            width:290px;
+            padding:0;
+            vertical-align:top;
+        }
+        .columnImg{
+            width:280px;
+            padding:0;
+            vertical-align:top;
+        }
+        .colSpace{
+            width:20px;
+            padding:0;
+            font-size:0;
+            line-height:0;
+        }
+        .card{
+            width:150px;
+            height: auto;
+            padding:0;
+        }
+        .cardSpace{
+            width:30px;
+            padding:0;
+        }
+        .icon{
+            width: 40px;
+            height: 40px;
+        }
+        .pink{
+            background-color: pink;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+        .green{
+            background-color: green;
+        }
+        .peru{
+            background-color: peru;
+        }
+        .purple{
+            background-color: purple;
         }
         
     </style>
@@ -105,190 +175,191 @@
 <body>
     <table class="bg">
         <tr>
-            <td><h1 class="white">your store</h1></td>
+            <td><h1 class="white logo">your<br> store</h1></td>
         </tr>
         <tr>
-            <td><img class="largeImg" src="/images/home.jpg"></td>
+            <td><img class="largeImg" src="/images/abstract3.jpg"></td>
         </tr>
         <tr>
-            <td><h2 class="brown">Hanukkah Sameach!</h2></td>
+            <td><h2 class="brown popFont">Hanukkah Sameach!</h2></td>
         </tr>
         <tr>
-            <td><p class="white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed odio eget orci ultrices porta. 
-                Nunc consectetur vehicula ex at suscipit. Proin quis vehicula purus. Maecenas mattis leo est, sed volutpat metus varius non</p>
+            <td><p class="white popFont">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed odio eget orci ultrices porta. 
+                Nunc consectetur vehicula ex at suscipit.  ex at suscipit. Proin quis vehicula purus. Maecenas mattis leo est, sed volutpat metus varius non</p>
             </td>
         </tr>
     </table>
 
     <table>
         <tr>
-            <td  colspan="3"><h2 class="bgBlue">Hanukkah Gift Giving Ideas</h2></td>
-        </tr>
-        <tr>
-            <td colspan="3"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed odio eget orci dio eget orci ultrices porta. 
-                Nunc consectetur vehicula</p></td>
-        </tr>
-        <tr>
-            <td><img class="smallImage margin" src="/images/img_man.jpg"></td>
-            <td><img class="smallImage margin" src="/images/flower.jpg"></td>
-            <td><img class="smallImage margin" src="/images/img_desktop.jpg"></td>    
-        </tr>
-        <tr>
-            <td class="blue">Keep Shining</td>
-            <td class="blue">Silver Menora</td>
-            <td class="blue">Dreidel</td>
-        </tr>
-        <tr>
-            <td>Lorem ipsum dolor sit amet, consectetur adipiscing</td>
-            <td>Lorem ipsum dolor sit amet, consectetur adipiscing</td>
-            <td>Lorem ipsum dolor sit amet, consectetur adipiscing</td>
-        </tr>
-        <tr>
-            <td><button>Read More</button></td>
-            <td><button>Read More</button></td>
-            <td><button>Read More</button></td>
+           <td>
+            <h2 class="bgBlue sansFont">Hanukkah Gift Giving Ideas</h2>
+            <p class="popFont">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed odio eget orci dio eget orci ultrices porta. 
+                Nunc consectetur vehicula. Maecenas sed odio</p>
+           </td>
         </tr>
     </table>
 
     <table>
-        <tr><td><hr></td></tr>
         <tr>
-            <td colspan="3"><h1>A curated shop, for a perfect gift!</h1></td>
+            <td class="card">
+                <p><img class="smallImage" src="/images/shirt.jpg"></p>
+                <p class="blue sansFont">Keep Shining</p>
+                <p class="popFont">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                <button>Read More</button>
+            </td>
+            <td class="cardSpace">&nbsp;</td>
+            <td class="card">
+                <p><img class="smallImage" src="/images/lamp.jpg"></p>
+                <p class="blue sansFont">Silver Menorah</p>
+                <p class="popFont">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                <button>Read More</button>
+            </td>
+            <td class="cardSpace">&nbsp;</td>
+            <td class="card">
+                <p><img class="smallImage" src="/images/pink.jpg"></p>
+                <p class="blue sansFont">Dreidle</p>
+                <p class="popFont">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                <button>Read More</button>
+            </td>
         </tr>
-        <tr>
-            <td colspan="3"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed odio eget orci dio eget orci ultrices porta. 
-                Nunc consectetur vehicula</p></td>
-        </tr>
-        <tr><td><hr></td></tr>
-    </table>
-
-    <table class="left">
-        <tr>
-            <td colspan="2"></td>
-        </tr>
-        <tr>
-            <td rowspan="4"><img class="mediumImg" src="/images/img_walkway.jpg"></td>   
-            <td><h2>Headphones</h2></td>
-        </tr>
-        <tr><td>
-            <!-- <h2>Headphones</h2> -->
-            <p>$49.99</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed odio eget orci dio eget orci ultrices porta. 
-                Nunc</p>
-            <p>Available colours</p>
-        </td></tr>
-        
-        <tr><td><div class="shape">
-            <div class="colour"></div>
-            <div class="colour"></div>
-            <div class="colour"></div>
-            <div class="colour"></div>
-            <div class="colour"></div>
-        </div></td></tr>
-        <tr><td><button>Shop Now</button></td></tr>
-    </table>
-
-    <table class="left">
-        <tr>
-            <td colspan="2"></td>
-        </tr>
-        <tr>
-            <td><h2>Headphones</h2></td>
-            <td rowspan="4"><img class="mediumImg" src="/images/img_walkway.jpg"></td>   
-        </tr>
-        <tr><td>
-            <!-- <h2>Headphones</h2> -->
-            <p>$49.99</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed odio eget orci dio eget orci ultrices porta. 
-                Nunc</p>
-            <p>Available colours</p>
-        </td></tr>
-        
-        <tr><td><div class="shape">
-            <div class="colour"></div>
-            <div class="colour"></div>
-            <div class="colour"></div>
-            <div class="colour"></div>
-            <div class="colour"></div>
-        </div></td></tr>
-        <tr><td><button>Shop Now</button></td></tr>
-    </table>
-
-    <table class="left">
-        <tr>
-            <td colspan="2"></td>
-        </tr>
-        <tr>
-            <td rowspan="4"><img class="mediumImg" src="/images/img_desktop2.jpg"></td>   
-            <td><h2>Headphones</h2></td>
-        </tr>
-        <tr><td>
-            <!-- <h2>Headphones</h2> -->
-            <p>$49.99</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed odio eget orci dio eget orci ultrices porta. 
-                Nunc</p>
-            <p>Available colours</p>
-        </td></tr>
-        
-        <tr><td><div class="shape">
-            <div class="colour"></div>
-            <div class="colour"></div>
-            <div class="colour"></div>
-            <div class="colour"></div>
-            <div class="colour"></div>
-        </div></td></tr>
-        <tr><td><button>Shop Now</button></td></tr>
-    </table>
-
-    <table class="left">
-        <tr>
-            <td colspan="2"></td>
-        </tr>
-        <tr>
-            <td><h2>Headphones</h2></td> 
-            <td rowspan="4"><img class="mediumImg" src="/images/img_abstract.jpg"></td>  
-        </tr>
-        <tr><td>
-            <!-- <h2>Headphones</h2> -->
-            <p>$49.99</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed odio eget orci dio eget orci ultrices porta. 
-                Nunc</p>
-            <p>Available colours</p>
-        </td></tr>
-        
-        <tr><td><div class="shape">
-            <div class="colour"></div>
-            <div class="colour"></div>
-            <div class="colour"></div>
-            <div class="colour"></div>
-            <div class="colour"></div>
-        </div></td></tr>
-        <tr><td><button>Shop Now</button></td></tr>
     </table>
 
     <table>
-        <tr><td><hr class="cyanBg"></td></tr>
         <tr>
-            <td><h2>Holiday Opening Hours</h2></td>
+            <td>
+                <hr>
+                <h1 class="sansFont">A curated shop, for a perfect gift!</h1>
+                <p class="popFont">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed odio eget orci dio eget orci ultrices porta. 
+                    Nunc consectetur vehicula</p>
+                <hr>
+            </td>
         </tr>
-        <tr>
-            <td><p>Monday-Friday:8am-5pm</p></td> 
-        </tr>
-        <tr><td><hr class="cyanBg"></td></tr>
     </table>
+
+    <table class="left">
+        <tr>
+            <td class="columnImg">
+                <p><img class="mediumImg" src="/images/headset.jpg"></p>
+            </td>
+            <td class="colSpace">&nbsp;</td>
+            <td class="column popFont">
+                <h2>Headphones</h2>
+                <p>$49.99</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed odio eget orci dio eget orci ultrices porta. 
+                Nunc</p>
+                <p class="blue">Available colours</p>
+                <div class="shape">
+                    <div class="colour pink"></div>
+                    <div class="colour green"></div>
+                    <div class="colour yellow"></div>
+                    <div class="colour peru"></div>
+                    <div class="colour purple"></div>
+                </div>
+                <button>Shop Now</button>
+            </td>
+        </tr>
+    </table>
+
+    <table class="left">
+        <tr>
+            <td class="column popFont">
+                <h2>Dinnerwear</h2>
+                <p>$49.99</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed odio eget orci dio eget orci ultrices porta. 
+                Nunc</p>
+                <button>Shop Now</button>
+            </td>
+            <td class="colSpace">&nbsp;</td>
+            <td class="columnImg">
+                <p><img class="mediumImg" src="/images/dinner.jpg"></p>
+            </td>
+        </tr>
+    </table>
+
+    <table class="left">
+        <tr>
+            <td class="columnImg popFont">
+                <p><img class="mediumImg" src="/images/flower bqhe-hPcxvCecdPI-unsplash.jpg"></p>
+            </td>
+            <td class="colSpace">&nbsp;</td>
+            <td class="column popFont">
+                <h2>Flower</h2>
+                <p>$49.99</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed odio eget orci dio eget orci ultrices porta. 
+                Nunc</p>
+                <button>Shop Now</button>
+            </td>
+        </tr>
+    </table>
+
+    <table class="left">
+        <tr>
+            <td class="column popFont">
+                <h2>Phone Case</h2>
+                <p>$49.99</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed odio eget orci dio eget orci ultrices porta. 
+                Nunc</p>
+                <button>Shop Now</button>
+            </td>
+            <td class="colSpace">&nbsp;</td>
+            <td class="columnImg">
+                <p><img class="mediumImg" src="/images/phone case.jpg"></p>
+            </td>
+        </tr>
+    </table>
+
+    <table class="left">
+        <tr>
+            <td class="columnImg">
+                <p><img class="mediumImg" src="/images/ladder.jpg"></p>
+            </td>
+            <td class="colSpace">&nbsp;</td>
+            <td class="column popFont">
+                <h2>Ladder wall Decor</h2>
+                <p>$49.99</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed odio eget orci dio eget orci ultrices porta. 
+                Nunc</p>
+                <button>Shop Now</button>
+            </td>
+        </tr>
+    </table>
+
     <table>
-        <tr><td colspan="3"></td></tr>
         <tr>
-            <td>Free Shipping</td>
-            <td>Up to 15% Cashback</td>
-            <td>Lower price guaranteed</td>
+            <td>
+                <hr class="cyanBg">
+                <img class="topMargin" src="/icons8-calendar-50.png" alt="calender">
+                <h2 class="sansFont">Holiday Opening Hours</h2>
+                <p class="popFont">Monday-Friday:8am-5pm</p>
+                <hr class="cyanBg">
+            </td>
         </tr>
-       
     </table>
+
+    <table class="bottomMargin">
+        <tr class="popFont">
+            <td class="card">
+                <img class="icon" src="/icons8-free-shipping-50.png">
+                <p class="popFont">Free Shipping</p>
+            </td>
+            <td class="cardSpace">&nbsp;</td>
+            <td class="card">
+                <img class="icon" src="/icons8-cashback-68.png">
+                <p class="popFont">Up to 15% Cashback</p>
+            </td>
+            <td class="cardSpace">&nbsp;</td>
+            <td class="card">
+                <img class="icon" src="/icons8-price-tag-usd-50.png">
+                <p class="popFont">Lower price guaranteed</p>
+            </td>
+        </tr>
+    </table>
+
 
     <table class="bg">
         <!-- <tr><td><hr></td></tr> -->
-        <tr><td><p class="cyan">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas</p></td></tr>
+        <tr><td><p class="cyan sansFont">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas</p></td></tr>
     </table>
 
     <table class="borderCor bg">
@@ -302,13 +373,13 @@
 
     <table class="bg">
         <tr>
-            <td><p class="brown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas</p></td>
+            <td><p class="brown sansFont">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas</p></td>
         </tr>
     </table>
 
     <table>
         <tr>
-            <td><h1>Your Store</h1></td>
+            <td><h1 class="logo">Your<br> Store</h1></td>
         </tr>
 
     </table>
